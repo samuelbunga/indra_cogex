@@ -7,6 +7,7 @@ import logging
 from typing import Optional
 
 from indra.ontology import IndraOntology
+
 from indra_cogex.representation import Node, Relation
 from indra_cogex.sources.processor import Processor
 

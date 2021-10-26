@@ -1,5 +1,4 @@
 import pytest
-
 from indra.config import get_config
 from indra.statements import Agent
 

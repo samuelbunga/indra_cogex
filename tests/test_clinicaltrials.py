@@ -1,5 +1,6 @@
-from indra_cogex.sources.clinicaltrials import ClinicaltrialsProcessor
 import os
+
+from indra_cogex.sources.clinicaltrials import ClinicaltrialsProcessor
 
 
 def test_get_nodes():

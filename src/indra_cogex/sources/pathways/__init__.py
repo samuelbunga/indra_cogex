@@ -5,12 +5,11 @@
 import logging
 from typing import ClassVar
 
-from indra.databases import hgnc_client
-from indra.databases import uniprot_client
-from indra.databases.identifiers import get_ns_id_from_identifiers
-from indra.ontology.bio import bio_ontology
 import pyobo
 import pyobo.api.utils
+from indra.databases import hgnc_client, uniprot_client
+from indra.databases.identifiers import get_ns_id_from_identifiers
+from indra.ontology.bio import bio_ontology
 from pyobo.struct import has_part
 
 from indra_cogex.representation import Node, Relation

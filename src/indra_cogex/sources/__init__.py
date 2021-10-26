@@ -5,16 +5,16 @@
 from class_resolver import Resolver
 
 from .bgee import BgeeProcessor
+from .cbioportal import (
+    CcleCnaProcessor,
+    CcleDrugResponseProcessor,
+    CcleMutationsProcessor,
+)
+from .clinicaltrials import ClinicaltrialsProcessor
 from .goa import GoaProcessor
 from .indra_db import DbProcessor
 from .indra_ontology import OntologyProcessor
 from .pathways import ReactomeProcessor, WikipathwaysProcessor
-from .cbioportal import (
-    CcleCnaProcessor,
-    CcleMutationsProcessor,
-    CcleDrugResponseProcessor,
-)
-from .clinicaltrials import ClinicaltrialsProcessor
 from .processor import Processor
 
 __all__ = [

@@ -6,15 +6,15 @@ import json
 import logging
 import pickle
 from pathlib import Path
-from tqdm import tqdm
 from typing import Tuple, Union
 
 import humanize
 import pandas as pd
 import pystow
-
-from indra.ontology.bio import bio_ontology
 from indra.databases.identifiers import ensure_prefix_if_needed
+from indra.ontology.bio import bio_ontology
+from tqdm import tqdm
+
 from indra_cogex.representation import Node, Relation
 from indra_cogex.sources.processor import Processor
 

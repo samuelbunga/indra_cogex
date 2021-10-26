@@ -5,11 +5,11 @@ from typing import Any, List, Mapping, Optional, Set, Tuple, Union
 
 import neo4j
 import neo4j.graph
+from indra.databases import identifiers
+from indra.ontology.standardize import get_standard_agent
+from indra.statements import Agent
 from neo4j import GraphDatabase
 
-from indra.databases import identifiers
-from indra.statements import Agent
-from indra.ontology.standardize import get_standard_agent
 from indra_cogex.representation import Node, Relation, norm_id
 
 logger = logging.getLogger(__name__)

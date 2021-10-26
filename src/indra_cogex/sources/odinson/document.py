@@ -5,10 +5,10 @@ as generating visualizations."""
 import glob
 import gzip
 import json
-import tqdm
 import os.path
 
 import networkx
+import tqdm
 
 
 class Token:

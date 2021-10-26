@@ -12,10 +12,9 @@ from typing import ClassVar, Iterable
 
 import click
 import pystow
+from indra.statements.validate import assert_valid_db_refs
 from more_click import verbose_option
 from tqdm import tqdm
-
-from indra.statements.validate import assert_valid_db_refs
 
 from indra_cogex.representation import Node, Relation, norm_id
 

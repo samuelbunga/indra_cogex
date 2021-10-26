@@ -5,8 +5,8 @@
 import logging
 
 import pandas as pd
-
 from indra.databases import uniprot_client
+
 from ..processor import Processor
 from ...representation import Node, Relation
 

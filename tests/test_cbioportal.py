@@ -1,5 +1,6 @@
-from indra_cogex.sources.cbioportal import CcleCnaProcessor, CcleMutationsProcessor
 import os
+
+from indra_cogex.sources.cbioportal import CcleCnaProcessor, CcleMutationsProcessor
 
 
 def test_get_cna_nodes():

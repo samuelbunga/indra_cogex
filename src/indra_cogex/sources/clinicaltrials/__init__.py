@@ -1,11 +1,13 @@
+from pathlib import Path
+from typing import Union
+
 import gilda
 import pandas as pd
-from pathlib import Path
 import pystow
 import tqdm
-from typing import Union
-from indra_cogex.sources.processor import Processor
+
 from indra_cogex.representation import Node, Relation
+from indra_cogex.sources.processor import Processor
 
 
 class ClinicaltrialsProcessor(Processor):
