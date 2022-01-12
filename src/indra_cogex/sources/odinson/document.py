@@ -209,8 +209,8 @@ def process_into_graphs(docs_path: List[str], cached: bool = True):
         if cached and os.path.exists(out_fname):
             continue
         try:
-            doc.draw_graph(out_fname)
-        except Exception as e:
+            doc.draw_graph(out_fname)  # noqa:S112
+        except Exception:
             continue
 
 

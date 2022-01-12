@@ -72,7 +72,7 @@ def _get_assembled_path(node_type: str) -> Path:
     help="If true, skips processors that are missing required input files without erroring.",
 )
 @verbose_option
-def main(
+def main(  # noqa:C901
     process: bool,
     force_process: bool,
     assemble: bool,

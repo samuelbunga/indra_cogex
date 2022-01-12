@@ -80,7 +80,7 @@ def _prepare_hypergeometric_test(
 @lru_cache(maxsize=1)
 def count_human_genes(client: Neo4jClient) -> int:
     """Count the number of HGNC genes in neo4j."""
-    query = f"""\
+    query = """\
         MATCH (n:BioEntity)
         WHERE n.id STARTS WITH 'hgnc'
         RETURN count(n) as count

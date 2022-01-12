@@ -1,1 +1,1 @@
-from indra import logger
+from indra import logger  # noqa:F401

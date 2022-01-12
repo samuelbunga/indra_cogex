@@ -3,7 +3,6 @@ import logging
 
 import pandas as pd
 
-from collections import defaultdict
 from pathlib import Path
 from typing import Union
 
@@ -50,7 +49,7 @@ class CcleMutationsProcessor(Processor):
             yield Node(db_ns="CCLE", db_id=cell_line, labels=["BioEntity"])
 
     def get_relations(self):
-        for index, row in self.df.iterrows():
+        for _, row in self.df.iterrows():
             if not pd.isna(row["HGVSp_Short"]):
                 hgnc_id = hgnc_client.get_hgnc_id(row["Hugo_Symbol"])
                 cell_line_id = row["Tumor_Sample_Barcode"]
@@ -97,7 +96,7 @@ class CcleCnaProcessor(Processor):
             yield Node(db_ns="CCLE", db_id=cell_line, labels=["BioEntity"])
 
     def get_relations(self):
-        for index, row in self.df.iterrows():
+        for _, row in self.df.iterrows():
             hgnc_id = hgnc_client.get_hgnc_id(row["Hugo_Symbol"])
             if not hgnc_id:
                 continue
