@@ -11,6 +11,8 @@ import flask
 import pandas as pd
 from flask_bootstrap import Bootstrap4
 from flask_wtf import FlaskForm
+from indra.databases import hgnc_client
+from more_click import make_web_command
 from wtforms import (
     BooleanField,
     FileField,
@@ -22,7 +24,6 @@ from wtforms import (
 )
 from wtforms.validators import DataRequired
 
-from indra.databases import hgnc_client
 from indra_cogex.client.enrichment.continuous import get_rat_scores, go_gsea
 from indra_cogex.client.enrichment.discrete import (
     EXAMPLE_GENE_IDS,
@@ -39,7 +40,6 @@ from indra_cogex.client.enrichment.signed import (
 )
 from indra_cogex.client.neo4j_client import Neo4jClient
 from indra_cogex.client.queries import get_edge_counter, get_node_counter
-from more_click import make_web_command
 
 app = flask.Flask(__name__)
 
